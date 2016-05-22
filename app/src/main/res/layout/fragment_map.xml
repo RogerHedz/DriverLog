@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapFragment" >
+
+    <fragment
+        android:id="@+id/myGMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <TextView
+        android:id="@+id/txtMaptrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtMapspeed"
+        android:layout_below="@+id/txtMapspeed"
+        android:layout_marginTop="16dp"
+        android:text="123"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtMapspeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="59dp"
+        android:text="123"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:textColorLink="@android:color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtMapLon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtMaptrip"
+        android:layout_alignBottom="@+id/txtMaptrip"
+        android:layout_alignLeft="@+id/txtMapLat"
+        android:inputType="textMultiLine"
+        android:text="123"
+        android:textColor="@android:color/black"
+        android:textColorLink="@android:color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtMapLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtMapspeed"
+        android:layout_alignBottom="@+id/txtMapspeed"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="26dp"
+        android:inputType="textMultiLine"
+        android:text="123"
+        android:textColor="@android:color/black"
+        android:textColorLink="@android:color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtmapbearing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtMaptrip"
+        android:layout_below="@+id/txtMaptrip"
+        android:layout_marginTop="18dp"
+        android:text="123"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_settings" 
+        android:icon="@drawable/ic_action_settings"/>
+
+        <item
+        android:id="@+id/action_optsendsms"
+        android:orderInCategory="1"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_sms" 
+        android:icon="@drawable/ic_action_sms2"/>
+
+        <item
+        android:id="@+id/action_optabout"
+        android:orderInCategory="2"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_about" 
+        android:icon="@drawable/ic_action_about"/>
+</menu>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:defaultValue="@string/pref_regnrvalue"
+        android:dialogTitle="@string/pref_dlgtitle_regnr"
+        android:key="key_pref_regnr"
+        android:summary="@string/pref_regnr"
+        android:title="@string/pref_title_regnr" />
+    <EditTextPreference
+        android:defaultValue="@string/pref_emailvalue"
+        android:dialogTitle="@string/pref_email"
+        android:key="key_pref_email"
+        android:title="@string/pref_email_title" />
+    <EditTextPreference
+        android:dialogTitle="@string/pref_sms"
+        android:inputType="number"
+        android:key="key_pref_sms"
+        android:title="@string/pref_smstitle" />
+
+    <PreferenceScreen
+        android:key="map_preference"
+        android:summary="@string/pref_mapheadersummary"
+        android:title="@string/pref_maptitle" >
+        <ListPreference
+            android:defaultValue="@string/pref_maptype"
+            android:dialogTitle="@string/pref_mapdlgtitle"
+            android:entries="@array/maptype"
+            android:entryValues="@array/maptype_values"
+            android:key="key_pref_maptype"
+            android:title="@string/pref_maptitle" />
+        <ListPreference
+            android:defaultValue="@string/pref_maptrackcolor"
+            android:dialogTitle="@string/pref_maptrackdlgtitle"
+            android:entries="@array/colors"
+            android:entryValues="@array/colors"
+            android:key="key_pref_maptrackcolor"
+            android:title="@string/pref_maptracktitle" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="key_pref_map3d"
+            android:title="@string/pref_map3dtitle" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="key_pref_mapnorthup"
+            android:title="@string/pref_mapnorthup" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="pos_preference"
+        android:summary="@string/pref_posheadersummary"
+        android:title="@string/pref_postitle" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="key_pref_gps"
+            android:title="@string/pref_gpstitle" />
+
+        <EditTextPreference
+            android:defaultValue="@string/pref_minmove"
+            android:dialogTitle="@string/pref_gpsminmovedlgtitle"
+            android:inputType="number"
+            android:key="key_pref_minmove"
+            android:title="@string/pref_gpsminmovetitle" />
+        <EditTextPreference
+            android:defaultValue="@string/pref_acc"
+            android:dialogTitle="@string/pref_gpsaccdlgtitle"
+            android:inputType="number"
+            android:key="key_pref_acc"
+            android:title="@string/pref_gpsacctitle" />
+        <EditTextPreference
+            android:dialogTitle="@string/pref_tripcorrdlgtitle"
+            android:inputType="numberDecimal|numberSigned"
+            android:key="key_pref_corr"
+            android:title="@string/pref_tripcorrtitle" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="key_pref_online"
+            android:title="@string/pref_onlinetitle" />
+
+        <EditTextPreference
+            android:defaultValue="@string/pref_url"
+            android:dependency="key_pref_online"
+            android:dialogTitle="@string/pref_onlinedlgtitle"
+            android:key="key_pref_url"
+            android:title="@string/pref_onlinetitle2" />
+
+        <CheckBoxPreference
+            android:key="key_pref_tracks"
+            android:title="@string/pref_gpssavetracks" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="key_pref_extern"
+            android:title="@string/pref_storageext" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="key_pref_googleadr"
+            android:title="@string/pref_geoloc" />
+    </PreferenceScreen>
+
+</PreferenceScreen>

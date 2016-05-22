@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string-array name="provider">
+        <item>Använd Satelliter för positionering</item>
+        <item>Använd Nätverk/Basstationer för positionering</item>
+    </string-array>
+    <string-array name="provider_values">
+        <item>Satelliter</item>
+        <item>Nätverk</item>
+    </string-array>
+    <string-array name="maptype_values">
+        <item>Satellit</item>
+        <item>Hybrid</item>
+        <item>Normal</item>
+        <item>Terräng</item>
+    </string-array>
+
+    <string-array name="maptype">
+        <item>Satellit</item>
+        <item>Hybrid</item>
+        <item>Normal</item>
+        <item>Terräng</item>
+    </string-array>
+
+    <string-array name="colors">
+        <item>Röd</item>
+        <item>Grön</item>
+        <item>Blå</item>
+        <item>Gul</item>
+        <item>Magenta</item>
+        <item>Cyan</item>
+        <item>Svart</item>
+        </string-array>
+
+
+</resources>
